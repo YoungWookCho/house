@@ -1,0 +1,10 @@
+{
+    "extends": "google",
+
+	"rules": {
+		"quotes": [
+			"error",
+			"double"
+		]
+	}
+}
