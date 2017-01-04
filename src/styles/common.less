@@ -1,1 +1,130 @@
 @import 'lib/include.all.less';
+
+html {
+	color: @default-color;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+html, body {
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+@header-info-height: 120px;
+@header-info-list-height: 31px;
+@header-info-title-height: 88px;
+@header-menu-height: 41px;
+@header-details-bar-height: 61px;
+@header-info-list-Lmargin:270px;
+
+.header-info {
+	width: 100%;
+	height: @header-info-height;
+}
+
+.header-info-list {
+	position: relative;
+	width: 100%;
+	height: @header-info-list-height;
+}
+.header-info-list>ul {
+	position: absolute;
+	top:0;
+	right: 0;
+	margin-right:@header-info-list-Lmargin;
+}
+
+.header-info-list>ul>li {
+	padding:0px 10px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 250%;
+}
+
+.header-info-title {
+	position: relative;
+	width: 100%;
+	height:@header-info-title-height;
+}
+.header-info-title>ul {
+	@abs-center();
+	left:47%;
+}
+.header-info-title>ul>li {
+	display: inline-block;
+}
+
+.header-info-text {
+	color: @main-color;
+	font-size: 17px;
+	padding-right: 10px ;
+	font-weight: bold;
+
+}
+.header-info-logo {
+	width: 92px;
+	height: 48px;
+	background-size: cover ;
+	@abs-vmiddle();
+}
+
+.header-info-phone {
+	display: inline-block;
+	position: absolute;
+	right: @header-info-list-Lmargin - 20px;
+	@abs-vmiddle();
+	font-size: 25px;
+	color: @default-color;
+}
+
+.header-menu {
+	position: relative;
+	width: 100%;
+	height: @header-menu-height;
+	border-bottom: solid 1px @main-border-color;
+}
+
+@header-menu-width:1170px;
+
+.header-menu>ul {
+	width: @header-menu-width;
+	@abs-hcenter();
+}
+
+.header-menu>ul>li {
+	width: @header-menu-width/8;
+	line-height: 250%;
+	display: inline-block;
+	text-align: center;
+	color: @default-color;
+	font-size: 16px;
+}
+
+.header-details>ul {
+	width: @header-menu-width;
+	@abs-hcenter();
+}
+
+.header-details>ul>li {
+	position: relative;
+	display: inline-block;
+	width: @header-menu-width/8;
+
+}
+.header-details>ul>li>ul {
+	position: absolute;
+	top: 0;
+
+}
+.header-details>ul>li>ul>li {
+	line-height: 220%;
+	color: @default-color;
+	font-size: 16px;
+	border: solid 1px @main-border-color;
+}
