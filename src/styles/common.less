@@ -16,6 +16,15 @@ ul {
 	margin: 0;
 }
 
+.zd-container {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+.zd-contents {
+	position: relative;
+}
+
 @header-info-height: 120px;
 @header-info-list-height: 31px;
 @header-info-title-height: 88px;
@@ -171,12 +180,14 @@ ul {
 
 //footer
 footer {
+	position: absolute;
+	bottom: 0px;
 	width: 100%;
+	height: 495px;
 
 }
 .footer-reward {
 	position: relative;
-
 }
 .footer-reward>ul {
 	text-align: center;
