@@ -351,33 +351,146 @@ background-color: white;
 	width: 100%;
 	background-color: @background-color;
 	position: relative;
+	text-align: center;
 }
 
 .construction {
-	position: absolute;
-	left:10%;
+	display: inline-block;
 	width: 80%;
-	background-color: red;
-
+	text-align: left;
 }
 .con-title {
-	border-left: palevioletred solid 3px;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+
 	line-height: 1.3;
-	padding-left: 10px;
 }
 .con-title>div {
 	display: inline-block;
 }
 .con-text {
+	padding-left: 10px;
+	border-left: palevioletred solid 3px;
 	color: @font-color;
-	font-size: 16px;
+	font-size: 18px;
+
 }
 
 .con-more {
-	font-size: 12px;
+	font-size: 14px;
 	color:@font-more-color;
+	padding: 0px 10px;
+	margin-left: 2px;
 }
 
+@best-height:290px;
 .con-best-wrapper {
 	position: relative;
+	height: @best-height;
+	width: 100%;
+}
+
+.arrow {
+	height: 32px;
+	width: 32px;
+	color:@font-more-color;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 32/2px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 32px;
+	z-index: 10;
+}
+
+.arrow-left {
+	position: absolute;
+	top: 40%;
+	left:15px;
+
+}
+
+.arrow-right {
+	position: absolute;
+	top: 40%;
+	right:15px;
+}
+
+.common-list {
+	position: relative;
+	width: 100%;
+	height: @best-height;
+	overflow: hidden;
+}
+.common-list>ul {
+	height: 100%;
+	width: 1000% ;
+	position: absolute;
+}
+.common-list>ul>li {
+	display: inline-block;
+	width: 250px;
+	height: 100%;
+	margin-right: 10px;
+
+}
+.list-form {
+	height: 100%;
+	position: relative;
+}
+
+.list-img {
+	background-size: cover;
+	width: 250px;
+	height: calc(~"100% - 45%");
+	border-top-left-radius: 7px ;
+	border-top-right-radius: 7px ;
+	border: @main-border-color 1px solid;
+
+}
+
+.list-text {
+	width: 250px;
+	height: calc(~"100% - 55%");
+	border-bottom-left-radius: 7px ;
+	border-bottom-right-radius: 7px ;
+	border: @main-border-color 1px solid;
+	border-top: none;
+	text-align: left;
+	padding: 20px;
+	background-color: white;
+	color: @font-more-color;
+}
+.list-text>div {
+	padding: 3px 0px;
+}
+.list-desc>div {
+	display: inline-block;
+	border: solid 1px @main-border-color;
+	border-radius: 3px;
+	margin-right: 3px;
+}
+.list-title {
+	color:@main-color;
+}
+
+.list-favor {
+	position: absolute;
+	width: calc(~ "100% / 5" );
+	height: 30px;
+	top: calc(~"100% - 45%");
+	right: 0px;
+	transform: translateY(-100%);
+	color: white;
+	background-color: rgba(255,30,0,0.5);
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.list-favor>div{
+	display: inline-block;
+	padding-right: 3px;
+	line-height: 30px;
+}
+.list-favor>div:last-child {
+	padding: 0px;
 }
