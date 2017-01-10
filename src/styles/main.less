@@ -117,7 +117,7 @@
 
 .estimate-promise-desc {
 	position: absolute;
-	top: 495px;
+	top: 505px;
 	right: 50%;
 	vertical-align: middle;
 }
@@ -125,6 +125,7 @@
 .estimate-promise-desc>ul>li{
 	display: inline-block;
 	position: relative;
+	vertical-align: top;
 
 }
 .promise-desc-circle {
@@ -388,6 +389,7 @@ background-color: white;
 	position: relative;
 	height: @best-height;
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .arrow {
@@ -494,3 +496,152 @@ background-color: white;
 .list-favor>div:last-child {
 	padding: 0px;
 }
+
+.select-type-wrapper {
+	width: 100%;
+	background-color: @background-color;
+}
+
+.select-type{
+	text-align: left;
+	width: 79%;
+	@margin-auto-width();
+}
+.select-type>ul>li {
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+	display: inline-block;
+	height: 38px;
+	padding: 0px 20px;
+	margin-right: 5px;
+	border-radius: 3px;
+	border: 1px solid @main-border-color;
+	position: relative;
+	color: @font-more-color;
+}
+.select-type>ul>li>i,
+.select-type>ul>li>div {
+	display: inline-block;
+	margin-right: 5px;
+}
+.label-checker {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background-size: cover;
+	top:8px;
+	left: 20px;
+	visibility: hidden;
+
+}
+.select-type>ul>li.checked {
+	background-color: rgba(255,255,255,0.7);
+}
+
+.label-checker.checked {
+	visibility: visible;
+}
+
+.label-office:hover,
+.label-cafe:hover,
+.label-villa:hover,
+.label-apart:hover,
+.label-all:hover{
+	background-color: rgba(255,255,255,0.8);
+}
+
+
+/*여기서부터가 포트폴리오*/
+.portfolio-wrapper {
+	width: 100%;
+	text-align: center;
+}
+.portfolio {
+	width: 79%;
+	text-align: left;
+	@margin-auto-width();
+}
+
+
+.portfolio-all .common-list {
+	width: 100%;
+}
+.portfolio-all .common-list>ul {
+	width: 100% ;
+}
+
+@portfolio-height: 319px;
+@portfolio-list-width: 280px;
+.portfolio-all .common-list>ul>li {
+	display: inline-block;
+	width: @portfolio-list-width;
+	height: @portfolio-height;
+	margin-right: 10px;
+
+}
+.portfolio-all .list-form {
+	position: relative;
+}
+
+.portfolio-all .list-img {
+	background-size: cover;
+	width: @portfolio-list-width;
+	height: calc(~"100% - 45%");
+	border-top-left-radius: 7px ;
+	border-top-right-radius: 7px ;
+	border: @main-border-color 1px solid;
+
+}
+
+.portfolio-all .list-text {
+	width: @portfolio-list-width;
+	height: calc(~"100% - 55%");
+	border-bottom-left-radius: 7px ;
+	border-bottom-right-radius: 7px ;
+	border: @main-border-color 1px solid;
+	border-top: none;
+	text-align: left;
+	padding: 20px;
+	background-color: white;
+	color: @font-more-color;
+}
+.portfolio-all .list-text>div {
+	padding: 3px 0px;
+}
+.portfolio-all .list-desc>div {
+	display: inline-block;
+	border: solid 1px @main-border-color;
+	border-radius: 3px;
+	margin-right: 3px;
+}
+.portfolio-all .list-title {
+	color:@main-color;
+}
+
+.portfolio-all .list-favor {
+	position: absolute;
+	width: calc(~ "100% / 5" );
+	height: 30px;
+	top: calc(~"100% - 45%");
+	right: 0px;
+	transform: translateY(-100%);
+	color: white;
+	background-color: rgba(255,30,0,0.5);
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.portfolio-all .list-favor>div{
+	display: inline-block;
+	padding-right: 3px;
+	line-height: 30px;
+}
+.portfolio-all .list-favor>div:last-child {
+	padding: 0px;
+}
+
+
+
+
+
