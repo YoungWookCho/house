@@ -1,5 +1,5 @@
 {
-    "extends": "google",
+	"extends": "google",
 
 	"rules": {
 		"quotes": [

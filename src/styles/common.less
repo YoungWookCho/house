@@ -185,6 +185,110 @@ ul {
 }
 
 
+
+
+
+/* 집 정보 리스트의 커먼 속성*/
+
+.common-list {
+	position: relative;
+	width: 100%;
+	/* 전체 리스트의 높이
+    height: @best-height;*/
+	/*전체 넘치는 것을 보여줄지
+    overflow: hidden;*/
+}
+.common-list>ul {
+	height: 100%;
+	/*리스트들의 전체 크기
+    width: 1000% ;*/
+	/* 위치 고정하기 위해서
+    position: absolute;*/
+}
+.common-list>ul>li {
+	display: inline-block;
+	/*리스트의 실제 너비사이즈(필수)
+    width: @best-list-width;*/
+	height: 100%;
+	margin-right: 10px;
+
+}
+.common-list-form {
+	height: 100%;
+	position: relative;
+}
+
+.common-list-img {
+	background-size: cover;
+	/*리스트의 실제 너비사이즈(필수)
+    width: @best-list-width;*/
+	height: calc(~"100% - 45%");
+	border-top-left-radius: 7px ;
+	border-top-right-radius: 7px ;
+	border: @main-border-color 1px solid;
+
+}
+
+.common-list-text {
+	/*리스트의 실제 너비사이즈(필수)
+    width: @best-list-width;*/
+	height: calc(~"100% - 55%");
+	border-bottom-left-radius: 7px ;
+	border-bottom-right-radius: 7px ;
+	border: @main-border-color 1px solid;
+	border-top: none;
+	text-align: left;
+	padding: 20px;
+	background-color: white;
+	color: @font-more-color;
+}
+.common-list-text>div {
+	padding: 3px 0px;
+}
+.common-list-desc>div {
+	display: inline-block;
+	border: solid 1px @main-border-color;
+	border-radius: 3px;
+	margin-right: 3px;
+}
+.common-list-title {
+	color:@main-color;
+}
+
+.common-list-favor {
+	position: absolute;
+	width: calc(~ "100% / 5" );
+	height: 30px;
+	top: calc(~"100% - 45%");
+	right: 0px;
+	transform: translateY(-100%);
+	color: white;
+	background-color: rgba(255,30,0,0.5);
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.common-list-favor>div{
+	display: inline-block;
+	padding-right: 3px;
+	line-height: 30px;
+}
+.common-list-favor>div:last-child {
+	padding: 0px;
+}
+
+
+/* 집 정보 리스트의 커먼 속성 End*/
+
+
+
+
+
+
+
+
+
+
 //footer
 footer {
 	position: absolute;
